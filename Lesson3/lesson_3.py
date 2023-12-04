@@ -11,10 +11,16 @@ def task_2(string: str):
 
 
 def task_3():
-    while int(input("23 + 15? ")) != 23 + 15:
-        print("Sorry you answer is incorrect. Please try again.")
-    else:
-        print(f"That's correct! 23 + 15 = {23+15}")
+    while True:
+        answer = input("23 + 15? ")
+
+        try:
+            if int(answer) == 23 + 15:
+                print("That's correct! 23 + 15 = {23+15}.")
+            else:
+                print("Sorry you answer is incorrect. Please try again.")
+        except ValueError:
+            print("Please enter a number.")
 
 
 def task_4():
@@ -34,6 +40,6 @@ if __name__ == '__main__':
 
     print(task_2("0979965586"))
 
-    #task_3()
+    task_3()
 
     task_4()
