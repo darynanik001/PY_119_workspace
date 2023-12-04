@@ -11,7 +11,6 @@ def task_2(string: str):
 
 
 def task_3():
-
     while int(input("23 + 15? ")) != 23 + 15:
         print("Sorry you answer is incorrect. Please try again.")
     else:
