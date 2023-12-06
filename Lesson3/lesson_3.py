@@ -16,7 +16,8 @@ def task_3():
 
         try:
             if int(answer) == 23 + 15:
-                print("That's correct! 23 + 15 = {23+15}.")
+                print(f"That's correct! 23 + 15 = {23+15}.")
+                break
             else:
                 print("Sorry you answer is incorrect. Please try again.")
         except ValueError:
@@ -36,9 +37,9 @@ if __name__ == '__main__':
     sample_1 = "helloworld"
     sample_2 = "my"
     sample_3 = "x"
-    print(task_1(sample_3))
-
-    print(task_2("0979965586"))
+    # print(task_1(sample_3))
+    #
+    # print(task_2("0979965586"))
 
     task_3()
 
