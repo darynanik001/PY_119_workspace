@@ -1,4 +1,5 @@
 # from mod_1 import get_random_between
+import mod_1
 
 from sys import path
 
@@ -7,3 +8,15 @@ from sys import path
 
 # Task 1
 # print("Random number:", get_random_between(10, 100))
+
+def test():
+    try:
+        1/0
+    except ZeroDivisionError:
+        return 1
+    finally:
+        return 0
+
+
+if __name__ == "__main__":
+    print(test())
