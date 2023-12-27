@@ -8,7 +8,7 @@ def generate_words_occurrences_map(string: str):
     words = string.split(', ')
 
     for word in words:
-        if not words_occurrences_map.get(word):
+        if word not in words_occurrences_map.get(word):
             words_occurrences_map[word] = 0
         words_occurrences_map[word] += 1
 
