@@ -18,9 +18,9 @@ def thread_pool_executer(func: Callable, num_of_threads: int, *args) -> list:
         yield thread
 
 
-def make_request_and_get_content(url: str, status_code: str) -> None:
+def make_request_and_save_content(url: str, status_code: str) -> None:
     response = requests.get(url, stream=True)
-    with open(f"images/{status_code}", "wb") as out_file:
+    with open(f"images/{status_code}.png", "wb") as out_file:
         shutil.copyfileobj(response.raw, out_file)
 
 
