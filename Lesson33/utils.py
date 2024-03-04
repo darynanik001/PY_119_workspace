@@ -63,5 +63,5 @@ def get_content(url: str) -> List[dict]:
 def dump_content(url: str) -> None:
     content = get_content(url)
     sort_content_by_date(content)
-    with open("data.json", "w") as f:
+    with open("data.json", "a") as f:
         json.dump(content, f, indent=2)
